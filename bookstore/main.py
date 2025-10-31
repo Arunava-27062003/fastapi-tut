@@ -34,3 +34,5 @@ async def read_books(year: int = None): # here year is a optional parameter
 @app.post("/book")
 async def create_book(book: Book):
     return book
+
+# pg 17 contd FastAPI CookBook
