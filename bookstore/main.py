@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from models import Book
 
 app = FastAPI()
 
@@ -27,3 +28,9 @@ async def read_books(year: int = None): # here year is a optional parameter
             "book": ["Book 1", "Book 2"]
         }
     return { "books": ["All Books"] }
+
+# add endpoint to our application where users can add new books
+# user sends a POST request to the /book endpoint with JSON data
+@app.post("/book")
+async def create_book(book: Book):
+    return book
