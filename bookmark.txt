@@ -1,0 +1,5 @@
+Book -> FastAPI Cookbook, 1st Edition
+
+Currently reading:
+ Chapter 2: Working with Data
+ Start from : page 25
